@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Integrated HTML Project</title>
+</head>
+<body>
+
+    <h1>Integrated HTML Project</h1>
+
+    <hr>
+
+    <!-- Datalist example -->
+    <h2>1. Choose Your Favorite Fruit:</h2>
+    <form>
+        <label for="fruit">Choose a fruit:</label>
+        <input list="fruitList" id="fruit" name="fruit">
+        <datalist id="fruitList">
+            <option value="Apple">
+            <option value="Banana">
+            <option value="Orange">
+            <option value="Grapes">
+        </datalist>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- novalidate example -->
+    <h2>2. Email Form:</h2>
+    <form novalidate>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- target="_blank" example -->
+    <h2>3. Enter Website URL:</h2>
+    <form action="/submit_url" method="POST" target="_blank">
+        <label for="website">Website URL:</label>
+        <input type="url" id="website" name="website" placeholder="https://www.example.com">
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- time input example -->
+    <h2>4. Choose Appointment Time:</h2>
+    <form>
+        <label for="appt-time">Choose Time:</label>
+        <input type="time" id="appt-time" name="appt-time" value="09:00">
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- q for short quote -->
+    <h2>5. Short Quote:</h2>
+    <p>He said, <q>The early bird catches the worm.</q></p>
+
+    <hr>
+
+    <!-- blockquote for long quote -->
+    <h2>6. Long Quote:</h2>
+    <blockquote cite="https://www.example.com">
+        <p>Intelligence is not the ability to learn, but the ability to adapt to change.</p>
+        <footer>Albert Einstein</footer>
+    </blockquote>
+
+    <hr>
+
+    <!-- wbr for word break opportunity -->
+    <h2>7. Using wbr for word break:</h2>
+    <p>This is a very long word that may cause display issues <wbr>if the text is too long to fit on the page.</p>
+
+    <hr>
+
+    <!-- bdi for text direction isolation -->
+    <h2>8. Using bdi for text direction isolation:</h2>
+    <p>I want to say: <bdi>مرحبا بالعالم</bdi> in a text with mixed directions.</p>
+
+    <hr>
+
+    <!-- button for interaction -->
+    <h2>9. Interaction Button:</h2>
+    <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+
+    <hr>
+
+    <!-- file input for file upload -->
+    <h2>10. File Upload:</h2>
+    <form enctype="multipart/form-data">
+        <input type="file" id="fileUpload" name="fileUpload">
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- search input for searching -->
+    <h2>11. Search Form:</h2>
+    <form action="/search" method="GET">
+        <input type="search" id="search" name="search" placeholder="Search for something">
+        <input type="submit" value="Search">
+    </form>
+
+    <hr>
+
+    <!-- file input for multiple file uploads -->
+    <h2>12. Multiple File Upload:</h2>
+    <form action="/upload_multiple_files" method="POST" enctype="multipart/form-data">
+        <input type="file" id="multiFiles" name="multiFiles" multiple>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- radio button form for gender selection -->
+    <h2>13. Gender Selection:</h2>
+    <form>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- checkbox form for interests selection -->
+    <h2>14. Interests Selection:</h2>
+    <form>
+        <label for="sport">Sport</label>
+        <input type="checkbox" id="sport" name="interest" value="sport">
+        <label for="music">Music</label>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="reading" name="interest" value="reading">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
